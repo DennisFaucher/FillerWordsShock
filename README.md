@@ -33,4 +33,6 @@ Once done, running the "go version" command should return this output: "go versi
 
 ### Creating the Real Time Microphone to Text Go Progran
 
-I made a few changes to the sample real time program provided by Google [here] (https://github.com/GoogleCloudPlatform/golang-samples/blob/master/speech/livecaption/livecaption.go) 
+I made a few changes to the sample real time program provided by Google
+
+[This page](https://github.com/GoogleCloudPlatform/golang-samples/blob/master/speech/livecaption/livecaption.go) provides
