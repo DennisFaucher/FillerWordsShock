@@ -12,4 +12,6 @@ I thought "Wouldn't it be great if, while I am presenting, an app was converting
 
 ## Version 1 - Google Speech to Text API (Semi-Fail)
 
+![GCP Output](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Google%20Mic%20to%20Text.png)
+
 I am a student of machine learning and familiar with the Google Cloud APIs for all sorts of tasks. When a Google search for "Real Time Speech to Text" turned up a result for using Google Cloud Speech to Text for this, I was all in. This page provides code samples in multiple programming languanges to send either recorded audio input (16 KHz, Mono) or microphone input to Google Cloud and transcribed text is sent back in real time.
