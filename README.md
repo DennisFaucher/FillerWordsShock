@@ -10,6 +10,6 @@ I've been speaking in public for about 40 years. I am always looking to improve 
 
 I thought "Wouldn't it be great if, while I am presenting, an app was converting my spoken words to text real time and flagging filler words?" These flagged words would give me a little reminder to slow down and take more pauses, if needed.
 
-## Version 1 - Google Speech to Text API
+## Version 1 - Google Speech to Text API (Semi-Fail)
 
-
+I am a student of machine learning and familiar with the Google Cloud APIs for all sorts of tasks. When a Google search for "Real Time Speech to Text" turned up a result for using Google Cloud Speech to Text for this, I was all in. This page provides code samples in multiple programming languanges to send either recorded audio input (16 KHz, Mono) or microphone input to Google Cloud and transcribed text is sent back in real time.
