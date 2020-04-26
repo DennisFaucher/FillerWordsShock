@@ -2,9 +2,9 @@
 
 Shock Collar for Presentation "Filler Words"
 
-## Why
-
 (No, not an actual schock collar🙂)
+
+## Why
 
 I've been speaking in public for about 40 years. I am always looking to improve my pace, clarity, informational value, and educational value. My new job, which I love, does not require as much public speaking as my old job and I am a little out of practice. I have noticed a few filler words creeping back into my presentations. Words such as "Um" and "Uh". 
 
