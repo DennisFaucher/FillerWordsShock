@@ -2,7 +2,7 @@
 
 Shock Collar for Presentation "Filler Words"
 
-(No, not an actual schock collar🙂)
+(No, not an actual shock collar🙂)
 
 ## Why
 
