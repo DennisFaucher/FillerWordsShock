@@ -20,7 +20,7 @@ Even though I have never used the Go programming language, I used the Go samples
 
 I used Linux for this test as I started with macOS, but the real time microphone input requires the use of the gst-launch-1.0 program which does not exist on macOS. gst-launch-1.0 passed the microphone input to the Go program in the correct format for the Google speech to text API (gst-launch-1.0 -v pulsesrc ! audioconvert ! audioresample ! audio/x-raw,channels=1,rate=16000 ! filesink location=/dev/stdout | go run gcp-mic-text.go)
 
-To install the Go language, version 1.14.2 on Linux:
+To install the Go language, version 1.14.2, on Linux:
 
 * cd /tmp
 * wget https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
