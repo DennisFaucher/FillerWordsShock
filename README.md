@@ -18,4 +18,13 @@ I am a student of machine learning and familiar with the Google Cloud APIs for a
 
 Even though I have never used the Go programming language, I used the Go samples as Python is typically a nightmare of failed pip installs for me. Python really is very unreliable. 
 
-Also, I used Linux for this test as I started with macOS, but the real time microphone input requires the use of the gst-launch-1.0 program which does not exist on macOS. gst-launch-1.0 passed the microphone input to the Go program in the correct format for the Google speech to text API (gst-launch-1.0 -v pulsesrc ! audioconvert ! audioresample ! audio/x-raw,channels=1,rate=16000 ! filesink location=/dev/stdout | go run gcp-mic-text.go)
+I used Linux for this test as I started with macOS, but the real time microphone input requires the use of the gst-launch-1.0 program which does not exist on macOS. gst-launch-1.0 passed the microphone input to the Go program in the correct format for the Google speech to text API (gst-launch-1.0 -v pulsesrc ! audioconvert ! audioresample ! audio/x-raw,channels=1,rate=16000 ! filesink location=/dev/stdout | go run gcp-mic-text.go)
+
+To install the Go language, version 1.14.2 on Linux:
+
+* cd /tmp
+* wget https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
+* sudo tar -xvf go1.11.linux-amd64.tar.gz
+* sudo cp -r go /usr/local
+
+Once done, running the "go version" command should return this output: "go version go1.14.2 linux/amd64"
