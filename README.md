@@ -55,3 +55,7 @@ Imagine my surprise after all this work when I could not get the word "Um" to sh
 ## Version 2 - IBM Watson Speech to Text API (Success!)
 
 ![Watson Keyword Detection](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Watson%20Keywords.png)
+
+So, fresh from my failure with Google speech to text, I searched for other speech to text APIs. I found this very helpful article which recommended Google, Microsoft, Dialogflow, IBM Watson, and Speechmatics: https://nordicapis.com/5-best-speech-to-text-apis/
+
+I have done some development in Azure, so I thought I would try Microsoft Cognitive Services next. 
