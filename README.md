@@ -37,3 +37,4 @@ I made a few changes to the sample real time program provided by Google [here](h
 
 ![GCP Changes](https://github.com/DennisFaucher/FillerWordsShock/blob/master/GCP%20Go%20Changes.png)
 
+##Version 2 - IBM Watson Speech to Text API (Success!)
