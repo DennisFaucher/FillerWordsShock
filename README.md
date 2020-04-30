@@ -33,8 +33,19 @@ Once done, running the "go version" command should return this output: "go versi
 
 ### Creating the Real Time Microphone to Text Go Progran
 
-I made a few changes to the sample real time program provided by Google [here](https://github.com/GoogleCloudPlatform/golang-samples/blob/master/speech/livecaption/livecaption.go).
+I made a few changes to the sample real time program provided by Google [here](https://github.com/GoogleCloudPlatform/golang-samples/blob/master/speech/livecaption/livecaption.go). 
 
 ![GCP Changes](https://github.com/DennisFaucher/FillerWordsShock/blob/master/GCP%20Go%20Changes.png)
+
+Basically, I replaced the print of the entire array of alternative text results to index 0. I also printed just the text (.Transcript) and not all the other fields such as "Result: alternatives:<transcript:" and "confidence:0.9377223 > is_final:true result_end_time:<seconds:12 nanos:70000000 >". This made the output much easier to read.
+
+My end goal was to flag my filler words such as "um" and "uh", so I Googled a bit of Go syntax and found the strings.ReplaceAll function. I added a bit of logic to replace all occurrences of "Um" with "\*\*Um\*\*" in the translated text.
+
+	for _, result := range resp.Results {
+		  // fmt.Printf("Result: %+v\n", result)
+			before_text := result.Alternatives[0].Transcript
+			after_text := strings.ReplaceAll(before_text, "Um", "**UM**")
+			// fmt.Printf(" | %+v\n", result.Alternatives[0].Transcript)
+			fmt.Printf(" | %+v\n", after_text)
 
 ## Version 2 - IBM Watson Speech to Text API (Success!)
