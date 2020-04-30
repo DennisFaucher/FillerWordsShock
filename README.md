@@ -53,3 +53,5 @@ for _, result := range resp.Results {
 Imagine my surprise after all this work when I could not get the word "Um" to show up in my speech to text no matter how many times I said um. It turns out that the Google speech to text model was built to supress filler words. Filler words will never show up in the transcripts. Oh, well. Let's see if Azure or IBM Watson leave filler words in the transcript. 
 
 ## Version 2 - IBM Watson Speech to Text API (Success!)
+
+![Watson Keyword Detection](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Watson%20Keywords.png)
