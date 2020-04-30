@@ -41,6 +41,7 @@ Basically, I replaced the print of the entire array of alternative text results 
 
 My end goal was to flag my filler words such as "um" and "uh", so I Googled a bit of Go syntax and found the strings.ReplaceAll function. I added a bit of logic to replace all occurrences of "Um" with "\*\*Um\*\*" in the translated text.
 
+
 ````for _, result := range resp.Results {
 	// fmt.Printf("Result: %+v\n", result)
 	before_text := result.Alternatives[0].Transcript
