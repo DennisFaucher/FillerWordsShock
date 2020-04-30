@@ -35,8 +35,6 @@ Once done, running the "go version" command should return this output: "go versi
 
 I made a few changes to the sample real time program provided by Google [here](https://github.com/GoogleCloudPlatform/golang-samples/blob/master/speech/livecaption/livecaption.go). 
 
-![GCP Changes](https://github.com/DennisFaucher/FillerWordsShock/blob/master/GCP%20Go%20Changes.png)
-
 Basically, I replaced the print of the entire array of alternative text results to index 0. I also printed just the text (.Transcript) and not all the other fields such as "Result: alternatives:<transcript:" and "confidence:0.9377223 > is_final:true result_end_time:<seconds:12 nanos:70000000 >". This made the output much easier to read.
 
 My end goal was to flag my filler words such as "um" and "uh", so I Googled a bit of Go syntax and found the strings.ReplaceAll function. I added a bit of logic to replace all occurrences of "Um" with "\*\*Um\*\*" in the translated text.
@@ -51,5 +49,7 @@ for _, result := range resp.Results {
 	fmt.Printf(" | %+v\n", after_text)
 }
 ````
+
+Imagine my surprise after all this work when I could not get the word "Um" to show up in my speech to text no matter how many times I said um. It turns out that the Google speech to text model was built to supress filler words. Filler words will never show up in the transcripts. Oh, well. Let's see if Azure or IBM Watson leave filler words in the transcript. 
 
 ## Version 2 - IBM Watson Speech to Text API (Success!)
