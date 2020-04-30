@@ -33,7 +33,7 @@ Once done, running the "go version" command should return this output: "go versi
 
 ### Creating the Real Time Microphone to Text Go Progran
 
-I made a few changes to the sample real time program provided by Google [here](https://github.com/GoogleCloudPlatform/golang-samples/blob/master/speech/livecaption/livecaption.go). 
+I made a few changes to the sample real time program provided by Google [here](https://github.com/GoogleCloudPlatform/golang-samples/blob/master/speech/livecaption/livecaption.go). You can find my changed file in the Google folder of this repo.
 
 Basically, I replaced the print of the entire array of alternative text results to index 0. I also printed just the text (.Transcript) and not all the other fields such as "Result: alternatives:<transcript:" and "confidence:0.9377223 > is_final:true result_end_time:<seconds:12 nanos:70000000 >". This made the output much easier to read.
 
