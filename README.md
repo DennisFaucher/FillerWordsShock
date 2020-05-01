@@ -65,3 +65,5 @@ I have done some development in Azure, so I thought I would try [Microsoft Cogni
 ![Azure Cognitive](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Azure%20Cognitive.png)
 
 ### On to IBM Watson Speech to Text
+
+Next step, IBM Watson. I have never used any IBM Watson services before but have heard good things. Also, I do not have a billable account with IBM Watson as I do with AWS, Azure, and GCP. Thankfully, IBM Watson Speech to Text does not require a billing account for < 500 minutes of audio trnascribed per month. 
