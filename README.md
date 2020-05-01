@@ -60,4 +60,4 @@ So, fresh from my failure with Google speech to text, I searched for other speec
 
 I have done some development in Azure, so I thought I would try Microsoft Cognitive Services next. I started a project in Microsoft Cognitive Services but could not figure out how to upload audio to the Speaker Recognition API Quick Start page.
 
-
+![Azure Cognitive](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Azure%20Cognitive.png
