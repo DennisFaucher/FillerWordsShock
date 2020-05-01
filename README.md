@@ -58,4 +58,6 @@ Imagine my surprise after all this work when I could not get the word "Um" to sh
 
 So, fresh from my failure with Google speech to text, I searched for other speech to text APIs. I found this very helpful article which recommended Google, Microsoft, Dialogflow, IBM Watson, and Speechmatics: https://nordicapis.com/5-best-speech-to-text-apis/
 
-I have done some development in Azure, so I thought I would try Microsoft Cognitive Services next. 
+I have done some development in Azure, so I thought I would try Microsoft Cognitive Services next. I started a project in Microsoft Cognitive Services but could not figure out how to upload audio to the Speaker Recognition API Quick Start page.
+
+
