@@ -60,7 +60,7 @@ So, fresh from my failure with Google speech to text, I searched for other speec
 
 ### Short Stop at Microsoft Azure Cognitive Services
 
-I have done some development in Azure, so I thought I would try Microsoft Cognitive Services next. I started a project in Microsoft Cognitive Services but could not figure out how to upload audio to the Speaker Recognition API Quick Start page. I'm sure there is a way, but I Googled for a while and coudl not figure this out. On to IBM Watson Speech to Text
+I have done some development in Azure, so I thought I would try [Microsoft Cognitive Services]https://azure.microsoft.com/en-us/services/cognitive-services/ next. I started a project in Microsoft Cognitive Services but could not figure out how to upload audio to the Speaker Recognition API Quick Start page. I'm sure there is a way, but I Googled for a while and coudl not figure this out. On to IBM Watson Speech to Text
 
 ![Azure Cognitive](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Azure%20Cognitive.png)
 
