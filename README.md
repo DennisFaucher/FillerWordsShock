@@ -128,4 +128,6 @@ If you want to create your own WAV files for testing, the files have to be 16KHz
 ![To WAV Converter Settings](https://github.com/DennisFaucher/FillerWordsShock/blob/master/ToWAVConverter.png)
 
 
+#### Creating a Custom Microphone to Text App with Trigger Words
 
+I was going to write a custom Go program as I did with GCP, until I stumbled across this beauty: 
