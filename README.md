@@ -70,7 +70,7 @@ Next step, IBM Watson. I have never used any IBM Watson services before but have
 
 #### Create an IBM Account
 
-If you don't already have one, create an account on ibm.com and head to this speech to text tutorial page: https://cloud.ibm.com/apidocs/speech-to-text
+If you don't already have one, create an account on ibm.com and head to this speech to text tutorial page: https://cloud.ibm.com/apidocs/speech-to-text#recognize-audio
 
 #### Get the Plumbing Tested with Curl
 
@@ -86,4 +86,17 @@ Find your speech to text resource, click on it and copy your API key and service
 
 ![Credentials](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Credentials.png)
 
+Now, back to the tutorial page to test curl access to speech to text. https://cloud.ibm.com/apidocs/speech-to-text#recognize-audio
 
+You will need to download the IBM sample audio file for testing. You can find that audio file here: https://watson-developer-cloud.github.io/doc-tutorial-downloads/speech-to-text/reference/audio-file.flac
+
+You should now have all the pieces you need to your first test (assuming you have curl on your machine).
+
+Try running this from your command line: 
+
+````bash
+curl -X POST -u "apikey:heKbpGFxMSOMWuIBmCDrkLwDlWx5cFt2_e1aUJw348LU" \
+--header "Content-Type: audio/flac" \
+--data-binary @/Users/faucherd/Music/audio-file.flac \
+https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/ab3a7056-ec6d-4d39-896b-e164f930aeec/v1/recognize
+````
