@@ -67,3 +67,15 @@ I have done some development in Azure, so I thought I would try [Microsoft Cogni
 ### On to IBM Watson Speech to Text
 
 Next step, IBM Watson. I have never used any IBM Watson services before but have heard good things. Also, I do not have a billable account with IBM Watson as I do with AWS, Azure, and GCP. Thankfully, IBM Watson Speech to Text does not require a billing account for < 500 minutes of audio trnascribed per month. 
+
+#### Create an IBM Account
+
+If you don't already have one, create an account on ibm.com and head to this speech to text tutorial page: https://cloud.ibm.com/apidocs/speech-to-text
+
+#### Get the Plumbing Tested with Curl
+
+Curl is the easiest way to test that you have a working personalized IBM speech to text API key and service URL. To create your API and service URL, create a peech to text service on this page: https://cloud.ibm.com/catalog. 
+
+
+
+You can find your API key and your service URL on this page: 
