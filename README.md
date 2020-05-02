@@ -125,3 +125,7 @@ If everything went well, you should see this output:
 
 If you want to create your own WAV files for testing, the files have to be 16KHz and mono. On my Mac, I used the To WAV Converter app found on this web site https://amvidia.com/wav-converter and used these settings:
 
+![To WAV Converter Settings](https://github.com/DennisFaucher/FillerWordsShock/blob/master/ToWAVConverter.png)
+
+
+
