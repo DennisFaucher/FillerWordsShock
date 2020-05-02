@@ -134,4 +134,6 @@ I was going to write a custom Go program as I did with GCP, until I stumbled acr
 
 This demo is written is JavaScript and I have just about diddly experience in JavaScript, so finding the files to change to my liking took my poor puny brain a few days of short breaks from my actual job. With the immense help of both the "grep -iRl" command and the ATOM IDE project search, I was able to find the files I needed.
 
-##### blah
+##### Change #1 - Replace default keywords to spot
+
+Not really a big deal as this field is user-editable before clicking "Record Audio", but still nice to find. You can modify the default keywords that come up in the app in the file /src/data/samples.json. Line 41 in the section "en-US_BroadbandModel" is where the default keywords are defined. You can change/reduce these to suit your needs.
