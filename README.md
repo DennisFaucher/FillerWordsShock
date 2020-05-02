@@ -90,13 +90,35 @@ Now, back to the tutorial page to test curl access to speech to text. https://cl
 
 You will need to download the IBM sample audio file for testing. You can find that audio file here: https://watson-developer-cloud.github.io/doc-tutorial-downloads/speech-to-text/reference/audio-file.flac
 
-You should now have all the pieces you need to your first test (assuming you have curl on your machine).
+You should now have all the pieces you need to your first test (assuming you have curl on your machine). For these instructions we will asume:
+* API Key: heAbpAFxASAMAuIBmADrkLwAlWx5cAt2_e1aUJw348AU
+* Service URL: https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/af3a7056-ef6d-4f39-896f-e164f930afef/v1/recognize (Need to append /v1/recognize to your service URL
+* Audio File Location: /Users/foobar/Music/audio-file.flac
 
 Try running this from your command line: 
 
 ````bash
-curl -X POST -u "apikey:heKbpGFxMSOMWuIBmCDrkLwDlWx5cFt2_e1aUJw348LU" \
+curl -X POST -u "apikey:heAbpAFxASAMAuIBmADrkLwAlWx5cAt2_e1aUJw348AU" \
 --header "Content-Type: audio/flac" \
---data-binary @/Users/faucherd/Music/audio-file.flac \
-https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/ab3a7056-ec6d-4d39-896b-e164f930aeec/v1/recognize
+--data-binary @/Users/foobar/Music/audio-file.flac \
+https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/af3a7056-ef6d-4f39-896f-e164f930afef/v1/recognize
+````
+
+If everything went well, you should see this output:
+
+````JSON
+{
+   "results": [
+      {
+         "alternatives": [
+            {
+               "confidence": 0.94, 
+               "transcript": "several tornadoes touched down as a line of severe thunderstorms swept through Colorado on Sunday "
+            }
+         ], 
+         "final": true
+      }
+   ], 
+   "result_index": 0
+}
 ````
