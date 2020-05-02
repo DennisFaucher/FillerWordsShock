@@ -76,6 +76,6 @@ If you don't already have one, create an account on ibm.com and head to this spe
 
 Curl is the easiest way to test that you have a working personalized IBM speech to text API key and service URL. To create your API and service URL, create a peech to text service on this page: https://cloud.ibm.com/catalog. 
 
-
+![Speech Service](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Speech%20to%20Text%20Service.png)
 
 You can find your API key and your service URL on this page: 
