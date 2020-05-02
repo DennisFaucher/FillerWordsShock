@@ -84,4 +84,6 @@ Find your speech to text resource, click on it and copy your API key and service
 
 ![Resource List](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Resource%20List.png)
 
+![Credentials](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Credentials.png)
+
 
