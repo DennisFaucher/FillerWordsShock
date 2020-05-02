@@ -122,3 +122,6 @@ If everything went well, you should see this output:
    "result_index": 0
 }
 ````
+
+If you want to create your own WAV files for testing, the files have to be 16KHz and mono. On my Mac, I used the To WAV Converter app found on this web site https://amvidia.com/wav-converter and used these settings:
+
