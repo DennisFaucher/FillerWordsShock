@@ -132,4 +132,6 @@ If you want to create your own WAV files for testing, the files have to be 16KHz
 
 I was going to write a custom Go program as I did with GCP, until I stumbled across this beauty: https://speech-to-text-demo.ng.bluemix.net/. Everything I need. I cloned the GitHub repo to my Mac from this URL: https://github.com/watson-developer-cloud/speech-to-text-nodejs
 
+This demo is written is JavaScript and I have just about diddly experience in JavaScript, so finding the files to change to my liking took my poor puny brain a few days of short breaks from my actual job. With the immense help of both the "grep -iRl" command and the ATOM IDE project search, I was able to find the files I needed.
 
+##### blah
