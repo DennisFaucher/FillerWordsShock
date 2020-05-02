@@ -80,4 +80,8 @@ Curl is the easiest way to test that you have a working personalized IBM speech 
 
 Once the service is created, you can find your API key and your service URL on this page: https://cloud.ibm.com/resources
 
+Find your speech to text resource, click on it and copy your API key and service URL
+
+![Resource List](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Resource%20List.png)
+
 
