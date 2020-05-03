@@ -165,7 +165,7 @@ The default display for flagged words is \[Word\]: Spotted - Start Time-End Time
 
 That's lovely, but I wanted something simpler such as 💥\[Word\] (Confidence%). With the help of my friend Atom, I found this display syntax in the file ./views/keywords.jsx on lines 45-47:
 
-````JSON
+````JavaScript
         <span className="base--p_light">
           {(spottings || []).map(s => `${s.start_time}-${s.end_time}s (${Math.round(s.confidence * 100)}%)`).join(', ')}
         </span>
