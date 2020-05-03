@@ -163,7 +163,7 @@ Well, GCP suppresses all filler words. IBM Watson replaces filler words with the
 
 The default display for flagged words is \[Word\]: Spotted - Start Time-End Time (Confidence%). For example:
 
-*Dennis*: Spotted - 7.26-7.94s (90%)
+**Dennis**: Spotted - 7.26-7.94s (90%)
 
 That's lovely, but I wanted something simpler such as 💥\[Word\] (Confidence%). With the help of my friend Atom, I found this display syntax in the file ./views/keywords.jsx on lines 45-47:
 
