@@ -187,3 +187,7 @@ Here is the new output for discovered keywords:
 
 **Dennis**: Spotted - 💥 (97%)
 
+##### Change #4 - Increase Confidence Floor
+
+During my testing, I was receiving alters even when I did not say filler words. It turns out that the demo program has a confidence floor of 10% before a translated word is flagged. I wanted to increase this confidence floor to 50% and test again. 
+
