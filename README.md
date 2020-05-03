@@ -217,3 +217,7 @@ So, now everything is working. Yay. What microphone do I use to listen for and a
 
 I chose option 3 even though option 3 required a hack.
 
+##### Google Chrome Hack to Allow Microphone Input for Insecure Web Site
+
+Here's the issue I ran into. This demo code runs a simple http web server. Most browsers, reasonably, do not allow microphone nor camera input to insecure web servers. Opening the microphone on my Mac to a web server running on the same Mac (localhost) is OK. Opening the microphone on my phone to some random IP address that just happens to be my Mac is not OK. 
+
