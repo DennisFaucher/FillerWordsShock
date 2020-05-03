@@ -134,7 +134,7 @@ I was going to write a custom Go program as I did with GCP, until I stumbled acr
 
 ![Microphone Demo](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Working%20Demo.png)
 
-This demo is written is JavaScript and I have just about diddly experience in JavaScript, so finding the files to change to my liking took my poor puny brain a few days of short breaks from my actual job. With the immense help of both the "grep -iRl" command and the ATOM IDE project search, I was able to find the files I needed.
+This demo is written is JavaScript and I have just about diddly experience in JavaScript, so finding the files to change to my liking took my poor puny brain a few days of short breaks from my actual job. With the immense help of both the "grep -iRl" command and the Atom IDE project search, I was able to find the files I needed.
 
 ##### Change #1 - Replace default keywords to spot
 
@@ -162,3 +162,11 @@ Well, GCP suppresses all filler words. IBM Watson replaces filler words with the
 ##### Change #3 - Simplify and Intesify Spoken Filler Words
 
 The default display for flagged words is \[Word\]: Spotted - Start Time-End Time (Confidence%)
+
+That's lovely, but I wanted something simpler such as 💥\[Word\] (Confidence%). With the help of my friend Atom, I found this display syntax in the file ./views/keywords.jsx on lines 45-47:
+
+````JSON
+        <span className="base--p_light">
+          {(spottings || []).map(s => `${s.start_time}-${s.end_time}s (${Math.round(s.confidence * 100)}%)`).join(', ')}
+        </span>
+````
