@@ -2,6 +2,8 @@
 
 Shock Collar for Presentation "Filler Words"
 
+![Shock Collar](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Shock%20Collar.png)
+
 (No, not an actual shock collar🙂)
 
 ## Why
