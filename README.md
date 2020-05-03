@@ -161,7 +161,9 @@ Well, GCP suppresses all filler words. IBM Watson replaces filler words with the
 
 ##### Change #3 - Simplify and Intesify Spoken Filler Words
 
-The default display for flagged words is \[Word\]: Spotted - Start Time-End Time (Confidence%)
+The default display for flagged words is \[Word\]: Spotted - Start Time-End Time (Confidence%). For example:
+
+*Dennis*: Spotted - 7.26-7.94s (90%)
 
 That's lovely, but I wanted something simpler such as 💥\[Word\] (Confidence%). With the help of my friend Atom, I found this display syntax in the file ./views/keywords.jsx on lines 45-47:
 
@@ -170,3 +172,12 @@ That's lovely, but I wanted something simpler such as 💥\[Word\] (Confidence%)
           {(spottings || []).map(s => `${s.start_time}-${s.end_time}s (${Math.round(s.confidence * 100)}%)`).join(', ')}
         </span>
 ````
+
+I hacked away at this file until I had something that worked for me. Here is my change:
+
+````JavaScript
+        <span className="base--p_light">
+           {(spottings || []).map(s => `💥 (${Math.round(s.confidence * 100)}%)`).join(', ')}
+        </span>
+````
+
