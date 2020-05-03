@@ -223,5 +223,6 @@ Here's the issue I ran into. This demo code runs a simple http web server. Most 
 
 ![Insecure Settings](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Insecure.png)
 
-Change the setting from Disabled to Enabled and type the full path to your web server in the text field. For example: http://192.168.1.100:3000 Once you do this, you will be prompted with a button to relaunch your browser. Relaunch your browser and you should be able to use the microphone on your phone (or any other device) to provide input to your speech to text application.
+Change the setting from Disabled to Enabled and type the full path to your web server in the text field. For example: http://192.168.1.100:3000 Once you do this, you will be prompted with a button to relaunch your browser. Relaunch your browser and you should be able to use the microphone on your phone (or any other device) to provide input to your speech to text application. Here is a photo of the entire system in use the other day as I was giving a PowerPoint presentation:
 
+![Phone Monitor](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Phone%20Monitor.png)
