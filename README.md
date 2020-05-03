@@ -136,11 +136,11 @@ I was going to write a custom Go program as I did with GCP, until I stumbled acr
 
 ![Microphone Demo](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Working%20Demo.png)
 
-This demo is written is JavaScript and I have just about diddly experience in JavaScript, so finding the files to change to my liking took my poor puny brain a few days. With the immense help of both the "grep -iRl" command and the Atom IDE project search, I was able to find the files I needed.
+This demo is written is JavaScript and I have just about diddly experience in JavaScript, so finding the files to change to my liking took my poor puny brain a few days. With the immense help of both the "grep -iRl" command and the Atom IDE project search, I was able to find the files I needed to change.
 
 ##### Change #1 - Replace default keywords to spot
 
-Not really a big deal as this field is user-editable before clicking "Record Audio", but still nice to find. You can modify the default keywords that come up in the app in the file /src/data/samples.json. Line 41 in the section "en-US_BroadbandModel" is where the default keywords are defined. You can change/reduce these to suit your needs.
+Not really a big deal as this field is user-editable before clicking "Record Audio" in the app, but still nice to find. You can modify the default keywords that come up in the app in the file /src/data/samples.json. Line 41 in the section "en-US_BroadbandModel" is where the default keywords are defined. You can change/reduce these to suit your needs.
 
 ````JSON
 "en-US_BroadbandModel": [
@@ -159,15 +159,15 @@ Not really a big deal as this field is user-editable before clicking "Record Aud
 
 ##### Change #2 - Highlight Ums & Uhs
 
-Well, GCP suppresses all filler words. IBM Watson replaces filler words with the string "%HESITATION". I discovered this through testing and eventually on this page: https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-basic-response#hesitation. All I needed to do was make sure that %HESITATION was one of my default keywords and I could be reminded of my filler words when speaking
+While Google suppresses all filler words. IBM Watson replaces filler words with the string "%HESITATION". I discovered this through testing and eventually found the documentation on this page: https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-basic-response#hesitation. All I needed to do was make sure that %HESITATION was one of my default keywords and I could be reminded of my filler words when speaking
 
-##### Change #3 - Simplify and Intesify Spoken Filler Words
+##### Change #3 - Simplify and Intesify Spoken Filler Word Alerts
 
 The default display for discovered keywords is \[Word\]: Spotted - Start Time-End Time (Confidence%). For example:
 
 **Dennis**: Spotted - 7.26-7.94s (90%)
 
-That's lovely, but I wanted something simpler such as 💥\[Word\] (Confidence%). With the help of my friend Atom, I found this display syntax in the file ./views/keywords.jsx on lines 45-47:
+That's lovely, but I wanted something simpler such as 💥\[Word\] (Confidence%). With the help of my friend Atom, I found the display syntax in the file ./views/keywords.jsx on lines 45-47:
 
 ````JavaScript
         <span className="base--p_light">
@@ -209,7 +209,7 @@ You can find this modified file in the Watson directory of this repo.
 
 ##### Listening and Displaying Alerts on Another Device
 
-So, now everything is working. Yay. What microphone do I use to listen for and alert on filler words? This microphone needs to be different from the microphone I am using to present over WebEx at my desk. I had a few options:
+So, now everything is working. Yay. Now what microphone do I use to listen for and alert on filler words? That microphone needs to be different from the microphone I am using to present over WebEx at my desk. I had a few options:
 
 1. Connect a second microphone to my Mac and tell the browser on my Mac to listen to this second microphone
 2. Connect a second microphone to the Linux VM used for the Google test and listen in this VM
