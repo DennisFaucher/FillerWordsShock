@@ -189,5 +189,23 @@ Here is the new output for discovered keywords:
 
 ##### Change #4 - Increase Confidence Floor
 
-During my testing, I was receiving alters even when I did not say filler words. It turns out that the demo program has a confidence floor of 10% before a translated word is flagged. I wanted to increase this confidence floor to 50% and test again. 
+During my testing, I was receiving alters even when I did not say filler words. It turns out that the demo program has a confidence floor of 1% before a translated word is flagged. I wanted to increase this confidence floor to 50% and test again. While opening random files in the repo in Atom, I found this section of ./views/demo.jsx on lines 117-119:
+
+````Javascript
+      keywords_threshold: keywords.length
+        ? 0.01
+        : undefined, // note: in normal usage, you'd probably set this a bit higher
+````
+
+I changed the 0.01 to 0.50 and the new section now looks like this:
+
+````Javascript
+      keywords_threshold: keywords.length
+        ? 0.50
+        : undefined, // note: in normal usage, you'd probably set this a bit higher
+````
+
+You can find this modified file in the Watson directory of this repo.
+
+
 
