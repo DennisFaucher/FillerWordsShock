@@ -221,5 +221,7 @@ I chose option 3 even though option 3 required a hack.
 
 Here's the issue I ran into. This demo code runs a simple http web server. Most browsers, reasonably, do not allow microphone nor camera input to insecure web servers. Opening the microphone on my Mac to a web server running on the same Mac (localhost) is OK. Opening the microphone on my phone to some random IP address that just happens to be my Mac is not OK. Thankfully, you can override this microphone block for trusted, insecure web servers in Chrome by going to the chrome://flags/#unsafely-treat-insecure-origin-as-secure setting in Chrome:
 
+![Insecure Settings](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Insecure.png)
 
+Change the setting from Disabled to Enabled and type the full path to your web server in the text field. For example: http://192.168.1.100:3000 Once you do this, you will be prompted with a button to relaunch your browser. Relaunch your browser and you should be able to use the microphone on your phone (or any other device) to provide input to your speech to text application.
 
