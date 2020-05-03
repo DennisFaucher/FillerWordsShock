@@ -154,3 +154,7 @@ Not really a big deal as this field is user-editable before clicking "Record Aud
     }
   ],
 ````
+
+##### Change # 2 - Highlight Ums & Uhs
+
+Well, GCP suppresses all filler words. IBM Watson replaces filler words with the string "%HESITATION". I discovered this through testing and eventually on this page: https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-basic-response#hesitation
