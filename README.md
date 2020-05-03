@@ -137,3 +137,18 @@ This demo is written is JavaScript and I have just about diddly experience in Ja
 ##### Change #1 - Replace default keywords to spot
 
 Not really a big deal as this field is user-editable before clicking "Record Audio", but still nice to find. You can modify the default keywords that come up in the app in the file /src/data/samples.json. Line 41 in the section "en-US_BroadbandModel" is where the default keywords are defined. You can change/reduce these to suit your needs.
+
+````JSON
+"en-US_BroadbandModel": [
+    {
+      "filename": "en-US_Broadband_sample1.wav",
+      "keywords": "IBM, admired, AI, transformations, cognitive",
+      "speaker_labels": true
+    },
+    {
+      "filename": "en-US_Broadband_sample2.wav",
+      "keywords": "Artificial Intelligence, data, predict, learn",
+      "speaker_labels": true
+    }
+  ],
+````
