@@ -155,6 +155,10 @@ Not really a big deal as this field is user-editable before clicking "Record Aud
   ],
 ````
 
-##### Change # 2 - Highlight Ums & Uhs
+##### Change #2 - Highlight Ums & Uhs
 
-Well, GCP suppresses all filler words. IBM Watson replaces filler words with the string "%HESITATION". I discovered this through testing and eventually on this page: https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-basic-response#hesitation
+Well, GCP suppresses all filler words. IBM Watson replaces filler words with the string "%HESITATION". I discovered this through testing and eventually on this page: https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-basic-response#hesitation. All I needed to do was make sure that %HESITATION was one of my default keywords and I could be reminded of my filler words when speaking
+
+##### Change #3 - Simplify and Intesify Spoken Filler Words
+
+The default display for flagged words is \[Word\]: Spotted - Start Time-End Time (Confidence%)
