@@ -2,7 +2,7 @@
 
 Shock Collar for Presentation "Filler Words"
 
-![Shock Collar](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Shock%20Collar.png)
+![Shock Collar](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Shock%20Collar.png)
 
 (No, not an actual shock collar🙂)
 
@@ -14,7 +14,7 @@ I thought "Wouldn't it be great if, while I am presenting, an app was converting
 
 ## Version 1 - Google Speech to Text API (Semi-Fail)
 
-![GCP Output](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Google%20Mic%20to%20Text.png)
+![GCP Output](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Google%20Mic%20to%20Text.png)
 
 I am a student of machine learning and familiar with the Google Cloud APIs for all sorts of tasks. When a Google search for "Real Time Speech to Text" turned up a result for using Google Cloud Speech to Text for this, I was all in. [This page](https://cloud.google.com/speech-to-text/docs/streaming-recognize) provides code samples in multiple programming languages to send either recorded audio input (16 KHz, Mono) or microphone input to Google Cloud and transcribed text is sent back in real time.
 
@@ -56,7 +56,7 @@ Imagine my surprise after all this work when I could not get the word "Um" to sh
 
 ## Version 2 - IBM Watson Speech to Text API (Success!)
 
-![Watson Keyword Detection](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Watson%20Keywords.png)
+![Watson Keyword Detection](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Watson%20Keywords.png)
 
 So, fresh from my failure with Google speech to text, I searched for other speech to text APIs. I found this very helpful article which recommended Google, Microsoft, Dialogflow, IBM Watson, and Speechmatics: https://nordicapis.com/5-best-speech-to-text-apis/
 
@@ -64,7 +64,7 @@ So, fresh from my failure with Google speech to text, I searched for other speec
 
 I have done some development in Azure, so I thought I would try [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/)  next. I started a project in Microsoft Cognitive Services but could not figure out how to upload audio to the Speaker Recognition API Quick Start page. I'm sure there is a way, but I Googled for a while and coudl not figure this out. On to IBM Watson Speech to Text
 
-![Azure Cognitive](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Azure%20Cognitive.png)
+![Azure Cognitive](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Azure%20Cognitive.png)
 
 ### On to IBM Watson Speech to Text
 
@@ -78,15 +78,15 @@ If you don't already have one, create an account on ibm.com and head to this spe
 
 Curl is the easiest way to test that you have a working personalized IBM speech to text API key and service URL. To create your API and service URL, create a peech to text service on this page: https://cloud.ibm.com/catalog. 
 
-![Speech Service](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Speech%20to%20Text%20Service.png)
+![Speech Service](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Speech%20to%20Text%20Service.png)
 
 Once the service is created, you can find your API key and your service URL on this page: https://cloud.ibm.com/resources
 
 Find your speech to text resource, click on it and copy your API key and service URL
 
-![Resource List](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Resource%20List.png)
+![Resource List](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Resource%20List.png)
 
-![Credentials](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Credentials.png)
+![Credentials](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Credentials.png)
 
 Now, back to the tutorial page to test curl access to speech to text. https://cloud.ibm.com/apidocs/speech-to-text#recognize-audio
 
@@ -127,14 +127,14 @@ If everything went well, you should see this output:
 
 If you want to create your own WAV files for testing, the files have to be 16KHz and mono. On my Mac, I used the To WAV Converter app found on this web site https://amvidia.com/wav-converter and used these settings:
 
-![To WAV Converter Settings](https://github.com/DennisFaucher/FillerWordsShock/blob/master/ToWAVConverter.png)
+![To WAV Converter Settings](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/ToWAVConverter.png)
 
 
 #### Creating a Custom Microphone to Text App with Trigger Words
 
 I was going to write a custom Go program as I did with GCP, until I stumbled across this beauty: https://speech-to-text-demo.ng.bluemix.net/. Everything I need. I cloned the GitHub repo to my Mac from this URL: https://github.com/watson-developer-cloud/speech-to-text-nodejs. To run this locally, just type "npm start" from the speech-to-text-nodejs directory (assuming you have npm installed). Point your web browser to localhost:3000 and you will be able to use the demo locally.
 
-![Microphone Demo](https://github.com/DennisFaucher/FillerWordsShock/blob/master/Working%20Demo.png)
+![Microphone Demo](https://github.com/DennisFaucher/FillerWordsShock/blob/master/images/Working%20Demo.png)
 
 This demo is written is JavaScript and I have just about diddly experience in JavaScript, so finding the files to change to my liking took my poor puny brain a few days of short breaks from my actual job. With the immense help of both the "grep -iRl" command and the Atom IDE project search, I was able to find the files I needed.
 
