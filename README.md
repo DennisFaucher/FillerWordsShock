@@ -189,7 +189,7 @@ Here is the new output for discovered keywords:
 
 ##### Change #4 - Increase Confidence Floor
 
-During my testing, I was receiving alters even when I did not say filler words. It turns out that the demo program has a confidence floor of 1% before a translated word is flagged. I wanted to increase this confidence floor to 50% and test again. While opening random files in the repo in Atom, I found this section of ./views/demo.jsx on lines 117-119:
+During my testing, I was receiving alerts even when I did not say filler words. It turns out that the demo program has a confidence floor of 1% before a translated word is flagged. I wanted to increase this confidence floor to 50% and test again. While opening random files in the repo in Atom, I found this section of ./views/demo.jsx on lines 117-119:
 
 ````Javascript
       keywords_threshold: keywords.length
@@ -207,5 +207,13 @@ I changed the 0.01 to 0.50 and the new section now looks like this:
 
 You can find this modified file in the Watson directory of this repo.
 
+##### Listening and Displaying Alerts on Another Device
 
+So, now everything is working. Yay. What microphone do I use to listen for and alert on filler words? This microphone needs to be different from the microphone I am using to present over WebEx at my desk. I had a few options:
+
+1. Connect a second microphone to my Mac and tell the browser on my Mac to listen to this second microphone
+2. Connect a second microphone to the Linux VM used for the Google test and listen in this VM
+3. Listen from the microphone and browser on my phone propped in front of me while I present
+
+I chose option 3 even though option 3 required a hack.
 
